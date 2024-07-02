@@ -1,0 +1,257 @@
+.btn-97,
+.btn-97 *,
+.btn-97::after,
+.btn-97::before {
+    border: 0 solid;
+    box-sizing: border-box;
+}
+
+.btn-97 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: #000;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 0.875rem;
+    /* Reduced font size */
+    line-height: 1.25rem;
+    /* Adjusted line height */
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    padding: 0.75rem 1.5rem;
+    /* Reduced padding */
+}
+
+.btn-97:disabled {
+    cursor: default;
+}
+
+.btn-97:-moz-focusring {
+    outline: auto;
+}
+
+.btn-97 svg {
+    display: block;
+    vertical-align: middle;
+}
+
+.btn-97 [hidden] {
+    display: none;
+}
+
+.btn-97 {
+    background: #fff;
+    border: 1px solid;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: #000;
+    display: block;
+    font-weight: 900;
+    -webkit-mask-image: none;
+    overflow: hidden;
+    padding: 0.75rem 1.5rem;
+    /* Reduced padding */
+    position: relative;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.btn-97:hover {
+    box-shadow: 0 6px 0 -4px #fff, 0 9px 0 -4px #aaa, 0 12px 0 -4px #000;
+    transform: translateY(-5px);
+}
+
+
+.btn-success {
+    color: #fff;
+    background-color: #08e53c;
+    border-color: #08e53c;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #0e61d4;
+    border-color: #0e61d4;
+}
+
+.btn-success:focus,
+.btn-success.focus {
+    color: #fff;
+    background-color: #08e53c;
+    border-color: #08e53c;
+    box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
+}
+
+.btn-success:active,
+.btn-success.active,
+.show>.btn-success.dropdown-toggle {
+    color: #fff;
+    background-color: #08e53c;
+    border-color: #08e53c;
+}
+
+.btn-success:active:focus,
+.btn-success.active:focus,
+.show>.btn-success.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(74, 123, 85, 0.5);
+}
+
+.btn-success:disabled,
+.btn-success.disabled {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    opacity: 0.65;
+}
+.form-box {
+    max-width: 600px;
+    width: 100%;
+    background: #f1f7fe;
+    overflow: hidden;
+    border-radius: 16px;
+    color: #010101;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.form-container {
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+}
+
+.input {
+    background: none;
+    border: 1px solid #eee;
+    outline: 0;
+    height: 40px;
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.input:invalid {
+    border-color: #e74c3c;
+}
+
+.input:valid {
+    border-color: #2ecc71;
+}
+
+
+.textarea {
+    background: none;
+    border: 1px solid #eee;
+    outline: 0;
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    resize: vertical;
+    height: 80px;
+}
+
+.textarea:invalid {
+    border-color: #e74c3c;
+}
+
+.textarea:valid {
+    border-color: #2ecc71;
+}
+
+.form-section {
+    padding: 10px;
+    font-size: .9rem;
+    background-color: #e0ecfb;
+    box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-section a {
+    font-weight: bold;
+    color: #0066ff;
+    transition: color .3s ease;
+}
+
+.form-section a:hover {
+    color: #005ce6;
+    text-decoration: underline;
+}
+
+.form button {
+    background-color: #12e220;
+    color: #fff;
+    border: 0;
+    border-radius: 24px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.form button:hover {
+    background-color: #0066ff;
+}
+
+@media (max-width: 600px) {
+    .form-box {
+        max-width: 90%;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .input,
+    .textarea {
+        height: 45px;
+        font-size: 0.9rem;
+    }
+
+    .form button {
+        padding: 10px 16px;
+        font-size: 1rem;
+    }
+
+    .price-input-container .input-group-text {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}

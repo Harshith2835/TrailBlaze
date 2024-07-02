@@ -1,0 +1,152 @@
+/* General styling */
+.custom-container {
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 25px auto;
+    border: 4px solid #12B1D1;
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+    padding: 25px;
+    border-radius: 10px;
+    background: white;
+}
+
+.heading {
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    color: rgb(16, 137, 211);
+}
+
+.custom-form {
+    margin-top: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.custom-form-input {
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: #cff0ff 0px 10px 10px -5px;
+}
+
+.custom-form-input::-moz-placeholder {
+    color: rgb(170, 170, 170);
+}
+
+.custom-form-input::placeholder {
+    color: rgb(170, 170, 170);
+}
+
+.custom-form-input:focus {
+    outline: none;
+    border: 2px solid #12B1D1;
+}
+
+.custom-form-login-button {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%);
+    color: white;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.custom-form-login-button:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
+}
+
+.custom-form-login-button:active {
+    transform: scale(0.95);
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 10px -10px;
+}
+
+.agreement {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.agreement a {
+    text-decoration: none;
+    color: #0099ff;
+    font-size: 12px;
+}
+
+/* File input customization */
+.custom-file-input {
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-file-input input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.input-group-text {
+    border-radius: 10px 0 0 10px;
+    background-color: #12B1D1;
+    color: white;
+    font-weight: bold;
+}
+
+.input-group-text:hover {
+    background-color: #0097A7;
+    color: white;
+    cursor: pointer;
+}
+
+.img-thumbnail-container {
+    display: inline-block;
+    margin-right: 10px; /* Adjust margin between thumbnails */
+    margin-bottom: 10px; /* Add bottom margin */
+    vertical-align: top; /* Ensure alignment */
+    position: relative;
+}
+
+.img-thumbnail {
+    width: 100px; /* Fixed width for thumbnails */
+    height: 100px; /* Fixed height for thumbnails */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.cyberpunk-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #30cfd0;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 5px; /* Adjust checkbox position */
+    left: 5px; /* Adjust checkbox position */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .img-thumbnail-container {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px; /* Add bottom margin */
+    }
+}

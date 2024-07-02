@@ -1,0 +1,50 @@
+<% layout('layout/boilerplate') %>
+<link rel="stylesheet" href="/css/new.css">
+<div class="custom-container">
+    <h1 class="text-center heading">New campground</h1>
+    <div class="custom-form">
+        <form action="/campgrounds" class="validated-form" method="POST" novalidate enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control custom-form-input" id="title" name="campground[title]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="location" class="form-label">Location</label>
+                <input type="text" class="form-control custom-form-input" id="location" name="campground[location]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="image" class="form-label">Image</label>
+                <input type="file" class="form-control custom-form-input custom-file-input" id="image" name="campground[images]" required multiple>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label">Campground Price</label>
+                    <input id="price" type="text" class="form-control custom-form-input" placeholder="$ 0.00" aria-label="price-label" name="campground[price]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control custom-form-input" id="description" rows="3" name="campground[description]" required></textarea>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3 text-center">
+                <button class="custom-form-login-button">Add camp</button>
+            </div>
+            <div class="text-center">
+                <a href="/campgrounds" class="btn btn-link agreement">Back</a>
+            </div>
+        </form>
+    </div>
+</div>
