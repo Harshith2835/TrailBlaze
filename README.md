@@ -51,7 +51,7 @@
 ### Clone or download this repository
 
 ```sh
-git clone https://github.com/Harshith2835/TrailBlaze
+git clone https://github.com/Harshith2835/TrailBlaze.git
 ```
 
 ### Install dependencies
