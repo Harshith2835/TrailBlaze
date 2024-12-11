@@ -9,5 +9,5 @@ const userSchema=new Schema({
         unique:true
     }
 });
-userSchema.plugin(passportlocalmongoose);
+userSchema.plugin(passportlocalmongoose, { usernameField: 'username' });
 module.exports=mongoose.model('user',userSchema);

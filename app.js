@@ -23,7 +23,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 const mongoDB = 'mongodb://127.0.0.1/TrailBlaze';
 const dbUrl = process.env.DB_URL || mongoDB;
 
-mongoose.connect(dbUrl);
+mongoose.connect(mongoDB);
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', () => {
@@ -47,7 +47,7 @@ app.use(mongoSanitize({
 
 const secret = process.env.SECRET || 'thisshouldbeabettersecret!';
 const store = MongoStore.create({
-    mongoUrl: dbUrl,
+    mongoUrl: mongoDB,
     touchAfter: 24 * 60 * 60,
     crypto: {
         secret: secret

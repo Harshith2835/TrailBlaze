@@ -16,7 +16,7 @@ module.exports.CreateNewUser=catchAsync(async(req,res,next)=>{
     req.login(registeredUser, err=>{
         if(err) return next(err);
         req.flash('success','welcome to trailblaze');
-        res.redirect('/campgrounds');
+        res.redirect('/campgrounds')
     })
     }
     catch(e){
